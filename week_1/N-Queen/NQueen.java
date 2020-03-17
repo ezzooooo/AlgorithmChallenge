@@ -4,17 +4,17 @@ import java.util.List;
 import java.util.Scanner;
 
 /**
- * ¹®Á¦
- * N-Queen ¹®Á¦´Â Å©±â°¡ N ¡¿ NÀÎ Ã¼½ºÆÇ À§¿¡ Äý N°³¸¦ ¼­·Î °ø°ÝÇÒ ¼ö ¾ø°Ô ³õ´Â ¹®Á¦ÀÌ´Ù.
- * NÀÌ ÁÖ¾îÁ³À» ¶§, ÄýÀ» ³õ´Â ¹æ¹ýÀÇ ¼ö¸¦ ±¸ÇÏ´Â ÇÁ·Î±×·¥À» ÀÛ¼ºÇÏ½Ã¿À.
+ * ë¬¸ì œ
+ * N-Queen ë¬¸ì œëŠ” í¬ê¸°ê°€ N Ã— Nì¸ ì²´ìŠ¤íŒ ìœ„ì— í€¸ Nê°œë¥¼ ì„œë¡œ ê³µê²©í•  ìˆ˜ ì—†ê²Œ ë†“ëŠ” ë¬¸ì œì´ë‹¤.
+ * Nì´ ì£¼ì–´ì¡Œì„ ë•Œ, í€¸ì„ ë†“ëŠ” ë°©ë²•ì˜ ìˆ˜ë¥¼ êµ¬í•˜ëŠ” í”„ë¡œê·¸ëž¨ì„ ìž‘ì„±í•˜ì‹œì˜¤.
  * 
- * ÀÔ·Â
- * Ã¹Â° ÁÙ¿¡ NÀÌ ÁÖ¾îÁø´Ù. (1 ¡Â N < 15)
+ * ìž…ë ¥
+ * ì²«ì§¸ ì¤„ì— Nì´ ì£¼ì–´ì§„ë‹¤. (1 â‰¤ N < 15)
  * 
- * Ãâ·Â
- * Ã¹Â° ÁÙ¿¡ Äý N°³¸¦ ¼­·Î °ø°ÝÇÒ ¼ö ¾ø°Ô ³õ´Â °æ¿ìÀÇ ¼ö¸¦ Ãâ·ÂÇÑ´Ù.
+ * ì¶œë ¥
+ * ì²«ì§¸ ì¤„ì— í€¸ Nê°œë¥¼ ì„œë¡œ ê³µê²©í•  ìˆ˜ ì—†ê²Œ ë†“ëŠ” ê²½ìš°ì˜ ìˆ˜ë¥¼ ì¶œë ¥í•œë‹¤.
  * 
- * @author ÀÌÀ±º¹
+ * @author ì´ìœ¤ë³µ
  *
  */
 public class NQueen {
@@ -30,13 +30,13 @@ public class NQueen {
 	
 	private static int recursionFunc(int queenCount, int rightIdx) {
 		int ret = 0;
-		if(queenCount == n) { // queenÀÇ °¹¼ö°¡ n°³¸é Á¤´ä! base-case
+		if(queenCount == n) { // queenì˜ ê°¯ìˆ˜ê°€ nê°œë©´ ì •ë‹µ! base-case
 			return 1;
 		}
 		
 		for(int x=0; x<n; x++) {
-				if(!checkInOther(queenCount,x) && queenCount!=0) continue; // queenÀÇ °ø°Ý ¹üÀ§¸é °Ç³Ê¶Ü
-				queenLoc[queenCount] = x; //queen Ã¼Å© 
+				if(!checkInOther(queenCount,x) && queenCount!=0) continue; // queenì˜ ê³µê²© ë²”ìœ„ë©´ ê±´ë„ˆëœ€
+				queenLoc[queenCount] = x; //queen ì²´í¬ 
 				ret += recursionFunc(queenCount+1,x+1); //recursion-case
 		}
 			
