@@ -6,3 +6,5 @@
 *.json
 *.db
 *.opendb
+*.suo
+*.ipch
