@@ -24,7 +24,6 @@ def bfs(house, i, j, N, visited):
 
     return [len(block), visited]  # 블록의 크기와, 방문한 노드들만 반환
 
-
 N = int(input())
 house = []
 visited = []
