@@ -20,6 +20,7 @@ def nqueen(sol,N):
     else:
         return 0
 
+
 count = 0
 num = int(input("Input N : "))
 for i in range(num):
