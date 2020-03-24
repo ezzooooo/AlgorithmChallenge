@@ -19,7 +19,7 @@
 
 * **BOJ** [순열의 순서][1722] ```이주원```
 * **BOJ** [가운데를 말해요][1655] ```이윤복```
-* **BOJ** [][] ```차요셉```
+* **BOJ** [트리의 순회][2263] ```차요셉```
 
 
 
@@ -28,5 +28,6 @@
 [1019]: https://www.acmicpc.net/problem/1019
 [1655]: https://www.acmicpc.net/problem/1655
 [1722]: https://www.acmicpc.net/problem/1722
+[2263]: https://www.acmicpc.net/problem/2263
 [2667]: https://www.acmicpc.net/problem/2667
 [9663]: https://www.acmicpc.net/problem/9663
